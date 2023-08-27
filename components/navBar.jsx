@@ -1,5 +1,3 @@
-'use client'
-
 import { useState } from "react";
 import Link from "next/link";
 
@@ -11,8 +9,8 @@ const links = [
         "name": "Projects",
         "href": "/projects"
     }, {
-        "name": "About",
-        "href": "/about"
+        "name": "Resume",
+        "href": "/resume"
     },
 
 ]
@@ -29,16 +27,10 @@ function NavLink({ to, children }) {
 function MobileNav({ open, setOpen }) {
     return (
         <div
-            className={`absolute  top-0 left-0 h-screen w-screen transform ${open ? "-translate-x-0" : "-translate-x-full"
+            className={`absolute pt-20 bg-gradient-to-br from-slate-700 to-gray-800  top-0 left-0 h-screen w-screen transform ${open ? "-translate-x-0" : "-translate-x-full"
                 } transition-transform duration-300 ease-in-out filter`}
         >
-            <div className="flex items-center justify-center filter drop-shadow-md h-20">
-                {" "}
-                {/*logo container*/}
-                <Link className="text-xl font-semibold" href="/">
-                    Jay Shaver
-                </Link>
-            </div>
+
             <div className="flex flex-col ml-4">
                 {links.map((link) => {
                     return (
@@ -67,7 +59,7 @@ export default function Navbar() {
     return (
         <nav className="flex filter px-4 py-4 h-20 items-center fixed w-full backdrop-filter backdrop-blur z-50 ">
             <MobileNav open={open} setOpen={setOpen} />
-            <div className="w-1/2 flex items-center">
+            <div className="w-1/2 flex items-center z-50">
                 <Link className="text-2xl font-semibold" href="/">
                     Jay Shaver
                 </Link>
