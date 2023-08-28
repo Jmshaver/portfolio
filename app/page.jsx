@@ -1,27 +1,42 @@
 import Hero from '@/components/hero';
 import Image from 'next/image';
 import Link from 'next/link';
-import {
-  IoLogoGithub, IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoOpenOutline
-} from "react-icons/io5";
+
 import Button from '@/components/button';
 import Footer from '@/components/footer';
 import ProjectSection from '@/components/projectSection';
-export default function Home() {
+import { getProjectsData } from "@/lib/projects"
+
+export const metadata = {
+  title: 'Jay Shaver',
+  icons: {
+    icon: '/logo.png',
+    // shortcut: '/shortcut-icon.png',
+    // apple: '/apple-icon.png',
+    // other: {
+    //   rel: 'apple-touch-icon-precomposed',
+    //   url: '/apple-touch-icon-precomposed.png',
+    // },
+  },
+}
+
+export default async function Home() {
+  const projectsData = await getProjectsData();
   return (
     <div>
       <Hero />
-      <section className='py-10'>
+      <section className='py-10 bg-gray-800'>
         <div className='flex flex-col items-center text-center gap-4'>
           <h2 className='text-3xl font-bold'>Some of My Projects</h2>
-          <Button text="View All My Projects 👨‍💻" href='/resume' />
+          <Button text="View All My Projects 👨‍💻" href='/projects' />
         </div>
 
 
-        <ProjectSection left={true} />
-        <ProjectSection left={false} />
+        {
+          projectsData.slice(0, 3).map((projectData, index) => (<ProjectSection data={projectData} left={index % 2} />))
+        }
       </section>
-      <section className='py-10 '>
+      <section className='py-10 bg-gradient-to-t from-slate-700 to-gray-800'>
 
         <div className='container mx-auto px-2 flex items-center content-between flex-col md:flex-row gap-4'>
           <Image

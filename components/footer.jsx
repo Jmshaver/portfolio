@@ -5,13 +5,13 @@ import Link from 'next/link';
 
 export default function Footer({ text, href }) {
     return (
-        <footer className="flex flex-row gap-4 p-4 items-center justify-center">
+        <footer className="flex flex-row gap-4 p-4 items-center justify-center bg-slate-700">
             <div>Made by yours truly 🤙</div>
             <div className="flex gap-2">
-                <Link href='insert'>
+                <Link href='https://www.linkedin.com/in/jay-shaver-a270a0178/'>
                     <IoLogoLinkedin className="text-3xl" />
                 </Link>
-                <Link href='insert'>
+                <Link href='https://github.com/Jmshaver'>
                     <IoLogoGithub className="text-3xl" />
                 </Link>
             </div>

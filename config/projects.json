@@ -1,0 +1,78 @@
+[
+    {
+        "name": "Claricity Consulting",
+        "link": "https://claricity.consulting/",
+        "icons": [
+            "Bootstrap",
+            "JavaScript",
+            "CSS",
+            "HTML"
+        ],
+        "description": "Created a modern and responsive single page website for Claricity Consulting using Bootstrap, JavaScript, CSS and HTML",
+        "mobileImage": "/claricity.consulting_(iPhone 12 Pro).png",
+        "desktopImage": "/claricity.consulting.png"
+    },
+    {
+        "name": "Michigan Data Science Team",
+        "github": "https://github.com/MichiganDataScienceTeam/website-redesign",
+        "link": "https://mdst.club",
+        "icons": [
+            "Figma",
+            "NextJS",
+            "Tailwind"
+        ],
+        "description": "This work was done for the Michigan Data Science Team - MDST, a club at the University of Michigan. Designed a mock up in Figma. Then implemented website features using NextJS (React Framework) and Tailwind. The website was desgigned to be edited easily and almost all text, images and other assests are configurable.",
+        "mobileImage": "/mdst.club_(iPhone 12 Pro).png",
+        "desktopImage": "/mdst.club.png"
+    },
+    {
+        "name": "In2ition Inc",
+        "link": "https://in2itioninc.com",
+        "icons": [
+            "Adobe Xd",
+            "Bootstrap",
+            "JavaScript",
+            "CSS",
+            "HTML"
+        ],
+        "description": "Created a mockup in Adobe Xd. Then implemented it with basic HTML and JavaScript, leveraging Boostrap and CSS for styling.",
+        "mobileImage": "/in2itioninc.com_(iPhone 12 Pro).png",
+        "desktopImage": "/in2itioninc.com.png"
+    },
+    {
+        "name": "Pocket Planes Calculator",
+        "github": "https://github.com/Jmshaver/Pocket-Planes",
+        "link": "https://jmshaver.github.io/Pocket-Planes/",
+        "icons": [
+            "React",
+            "Tailwind"
+        ],
+        "description": "Love playing Pocket Planes on my phone and found current calculators didn't work well on mobile and were not userfreindly or acessible. Made improvements such as styling searable drop down and more acessible layout",
+        "mobileImage": "/jmshaver.github.io_Pocket-Planes_(iPhone 12 Pro).png",
+        "desktopImage": "/jmshaver.github.io_Pocket-Planes.png"
+    },
+    {
+        "name": "M-Hub",
+        "github": "https://github.com/Jmshaver/M-Hub-Website",
+        "link": "https://m-hub.club",
+        "icons": [
+            "NextJS",
+            "Tailwind"
+        ],
+        "description": "Created a single page website based on MDST website (see above) for The Buisness Research Club at Michigan, another club at the University of Michigan",
+        "mobileImage": "/m-hub.club_(iPhone 12 Pro).png",
+        "desktopImage": "/m-hub.club.png"
+    },
+    {
+        "name": "Headquarters Economy",
+        "link": "https://headquarterseconomy.com/",
+        "icons": [
+            "JavaScript",
+            "CSS",
+            "HTML"
+        ],
+        "description": "First responsive website I ever made!",
+        "mobileImage": "/headquarterseconomy.com_(iPhone 12 Pro).png",
+        "desktopImage": "/headquarterseconomy.com.png"
+    }
+]

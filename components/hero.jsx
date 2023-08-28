@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 export default function Hero() {
   return (
-    <div className="bg-gradient-to-br from-slate-700 to-gray-800">
+    <div className="bg-gradient-to-b from-slate-700 to-gray-800">
       <div className="container mx-auto px-2 py-32 flex items-center content-between flex-col-reverse sm:flex-row gap-4">
         <div className="sm:w-2/3 lg:w-1/2">
           <h1 className="text-5xl font-extrabold self-align-center">

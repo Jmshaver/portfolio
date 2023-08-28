@@ -57,7 +57,7 @@ function MobileNav({ open, setOpen }) {
 export default function Navbar() {
     const [open, setOpen] = useState(false);
     return (
-        <nav className="flex filter px-4 py-4 h-20 items-center fixed w-full backdrop-filter backdrop-blur z-50 ">
+        <nav className="flex filter px-4 py-4 h-20 items-center fixed w-full backdrop-filter backdrop-blur z-50 bg-gradient-to-b from-gray-800">
             <MobileNav open={open} setOpen={setOpen} />
             <div className="w-1/2 flex items-center z-50">
                 <Link className="text-2xl font-semibold" href="/">
