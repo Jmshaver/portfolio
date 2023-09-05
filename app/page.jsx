@@ -25,7 +25,7 @@ export default async function Home() {
   return (
     <div>
       <Hero />
-      <section className='py-10 bg-gray-800'>
+      <section className='py-10 bg-gray-200 dark:bg-gray-800'>
         <div className='flex flex-col items-center text-center gap-4'>
           <h2 className='text-3xl font-bold'>Some of My Projects</h2>
           <Button text="View All My Projects 👨‍💻" href='/projects' />
@@ -36,7 +36,7 @@ export default async function Home() {
           projectsData.slice(0, 3).map((projectData, index) => (<ProjectSection data={projectData} left={index % 2} />))
         }
       </section>
-      <section className='py-10 bg-gradient-to-t from-slate-700 to-gray-800'>
+      <section className='py-10 bg-gradient-to-t from-slate-300 dark:from-slate-700 to-gray-200 dark:to-gray-800'>
 
         <div className='container mx-auto px-2 flex items-center content-between flex-col md:flex-row gap-4'>
           <Image

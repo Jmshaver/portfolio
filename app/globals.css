@@ -15,3 +15,17 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .25rem;
+}
+
+@media (min-width: 640px) {
+  .resume-grid {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: .5rem;
+  }
+}

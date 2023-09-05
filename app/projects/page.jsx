@@ -22,7 +22,7 @@ export default async function Projects() {
     return (
         <div>
 
-            <section className='pt-24 pb-10 bg-gradient-to-t from-slate-700 via-gray-800 to-slate-700'>
+            <section className='pt-24 pb-10 bg-gradient-to-t from-slate-300 dark:from-slate-700 via-gray-200 dark:via-gray-800 to-slate-300 dark:to-slate-700'>
 
                 <h1 className='text-3xl font-bold text-center'>
                     All My Projects 👨‍💻

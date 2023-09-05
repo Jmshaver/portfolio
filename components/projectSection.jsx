@@ -10,7 +10,7 @@ export default function ProjectSection({ left, data }) {
             <MobileImage image={data?.mobileImage} name={data?.name} left={left} />
 
         </div>
-        <div className={`${data?.desktopImage ? 'lg:absolute lg:rounded-t-lg lg:-translate-y-1/2 top-1/2 lg:w-5/12' : 'rounded-t-lg'}   bg-slate-600 drop-shadow p-4 rounded-b-lg w-full  ${left ? 'left-0' : 'right-0'}`} >
+        <div className={`${data?.desktopImage ? 'lg:absolute lg:rounded-t-lg lg:-translate-y-1/2 top-1/2 lg:w-5/12' : 'rounded-t-lg'} bg-slate-400  dark:bg-slate-600 drop-shadow p-4 rounded-b-lg w-full  ${left ? 'left-0' : 'right-0'}`} >
             <div className='flex text-3xl bold justify-between items-center mb-2'>
                 <h2 className=''>{data.name}</h2>
                 <div className='flex gap-2'>
@@ -45,7 +45,7 @@ export default function ProjectSection({ left, data }) {
 function DesktopImage({ name, image }) {
     if (name && image) {
         return (
-            <div className="mockup-window bg-base-300 w-full lg:rounded-b-lg rounded-b-none">
+            <div className="mockup-window dark:bg-base-300 bg-base-100 w-full lg:rounded-b-lg rounded-b-none">
                 <Image
                     className=""
                     width={1920}

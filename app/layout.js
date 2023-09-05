@@ -13,12 +13,14 @@ export default function RootLayout({ children }) {
 
     if (isDarkThemeInLocalStorage || (!('theme' in localStorage) && prefersDarkMode)) {
       document.documentElement.classList.add('dark');
+      document.documentElement.setAttribute('data-theme', 'dark');
     } else {
       document.documentElement.classList.remove('dark');
+      document.documentElement.setAttribute('data-theme', 'light');
     }
   }, []);
   return (
-    <html lang="en">
+    <html data-theme="light" lang="en">
       <body className={inter.className + ' bg-white dark:bg-gray-800 text-black dark:text-white'}>
         <Navbar />
         {children}

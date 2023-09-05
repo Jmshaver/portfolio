@@ -1,5 +1,5 @@
 import {
-    IoLogoGithub, IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoOpenOutline, IoLogoLinkedin, IoLogoReact, IoLogoFigma
+    IoLogoGithub, IoLogoHtml5, IoLogoCss3, IoLogoJavascript, IoOpenOutline, IoLogoLinkedin, IoLogoReact, IoLogoFigma, IoSunny, IoMoon
 } from "react-icons/io5";
 
 import { BsFillBootstrapFill } from "react-icons/bs"
@@ -18,7 +18,9 @@ const iconMap = {
     "Adobe Xd": SiAdobexd,
     linkedin: IoLogoLinkedin,
     github: IoLogoGithub,
-    open: IoOpenOutline
+    open: IoOpenOutline,
+    sun: IoSunny,
+    moon: IoMoon
 
 };
 
