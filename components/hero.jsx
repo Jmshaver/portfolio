@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="container mx-auto px-2 py-32 flex items-center content-between flex-col-reverse sm:flex-row gap-4">
         <div className="sm:w-2/3 lg:w-1/2">
           <h1 className="text-5xl font-extrabold self-align-center">
-            👋 I'm{' '}
+            👋 I&apos;m{' '}
             <span className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Jay
             </span>
