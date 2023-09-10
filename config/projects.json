@@ -8,7 +8,7 @@
             "CSS",
             "HTML"
         ],
-        "description": "Created a modern and responsive single page website for Claricity Consulting using Bootstrap, JavaScript, CSS and HTML",
+        "description": "Created a modern and responsive single page website for Claricity Consulting using Bootstrap, JavaScript, CSS and HTML. Also setup company email and website hosting.",
         "mobileImage": "/claricity.consulting_(iPhone 12 Pro).png",
         "desktopImage": "/claricity.consulting.png"
     },
@@ -21,7 +21,7 @@
             "NextJS",
             "Tailwind"
         ],
-        "description": "This work was done for the Michigan Data Science Team - MDST, a club at the University of Michigan. Designed a mock up in Figma. Then implemented website features using NextJS (React Framework) and Tailwind. The website was desgigned to be edited easily and almost all text, images and other assests are configurable.",
+        "description": "This work was done for the Michigan Data Science Team - MDST, a club at the University of Michigan. Designed a mockup in Figma. Then implemented website features using NextJS (React Framework) and Tailwind. The website was designed to be edited easily and almost all text, images and other assets are configurable.",
         "mobileImage": "/mdst.club_(iPhone 12 Pro).png",
         "desktopImage": "/mdst.club.png"
     },
@@ -35,7 +35,7 @@
             "CSS",
             "HTML"
         ],
-        "description": "Created a mockup in Adobe Xd. Then implemented it with basic HTML and JavaScript, leveraging Boostrap and CSS for styling.",
+        "description": "Created a mockup in Adobe Xd. Then implemented it with basic HTML and JavaScript, leveraging Bootstrap and CSS for styling.",
         "mobileImage": "/in2itioninc.com_(iPhone 12 Pro).png",
         "desktopImage": "/in2itioninc.com.png"
     },
@@ -47,7 +47,7 @@
             "React",
             "Tailwind"
         ],
-        "description": "Love playing Pocket Planes on my phone and found current calculators didn't work well on mobile and were not userfreindly or acessible. Made improvements such as styling searable drop down and more acessible layout",
+        "description": "I love playing Pocket Planes on my phone and found current calculators didn't work well on mobile and were not user friendly or accessible. Made improvements such as styling searchable drop down and more accessible layout.",
         "mobileImage": "/jmshaver.github.io_Pocket-Planes_(iPhone 12 Pro).png",
         "desktopImage": "/jmshaver.github.io_Pocket-Planes.png"
     },
@@ -59,7 +59,7 @@
             "NextJS",
             "Tailwind"
         ],
-        "description": "Created a single page website based on MDST website (see above) for The Buisness Research Club at Michigan, another club at the University of Michigan",
+        "description": "Created a single page website based on MDST website (see above) for The Business Research Club at Michigan, another club at the University of Michigan.",
         "mobileImage": "/m-hub.club_(iPhone 12 Pro).png",
         "desktopImage": "/m-hub.club.png"
     },
@@ -71,7 +71,7 @@
             "CSS",
             "HTML"
         ],
-        "description": "First responsive website I ever made!",
+        "description": "Created a responsive website only using base HTML, CSS and JavaScript to help advertise new book launch. Also created html email signature to advertise the book. ",
         "mobileImage": "/headquarterseconomy.com_(iPhone 12 Pro).png",
         "desktopImage": "/headquarterseconomy.com.png"
     }

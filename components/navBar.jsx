@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Icon from "./icon";
+import { useTheme } from 'next-themes'
 
 
 const links = [
@@ -57,27 +58,10 @@ function MobileNav({ open, setOpen }) {
 }
 
 export default function Navbar() {
-    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const isDarkThemeInLocalStorage = localStorage.theme === 'dark';
+
     const [open, setOpen] = useState(false);
-    const [dark, setDark] = useState(isDarkThemeInLocalStorage || (!('theme' in localStorage) && prefersDarkMode))
-    function updateTheme() {
-        setDark(!dark)
-    }
-    useEffect(() => {
-        const isDarkThemeInLocalStorage = localStorage.theme === 'dark';
+    const { theme, setTheme } = useTheme()
 
-        if (isDarkThemeInLocalStorage) {
-            document.documentElement.classList.remove('dark');
-            localStorage.theme = 'light'
-            document.documentElement.setAttribute('data-theme', 'light');
-        } else {
-            document.documentElement.classList.add('dark');
-            localStorage.theme = 'dark'
-            document.documentElement.setAttribute('data-theme', 'dark');
-        }
-
-    }, [dark]);
     return (
         <nav className="flex filter px-4 py-4 h-20 items-center fixed w-full backdrop-filter backdrop-blur z-50 bg-gradient-to-b from-gray-300 dark:from-gray-800">
             <MobileNav open={open} setOpen={setOpen} />
@@ -115,7 +99,7 @@ export default function Navbar() {
                         )
                     })}
                 </div>
-                <button className="text-2xl relative w-10 h-10 overflow-hidden" onClick={updateTheme}>
+                <button className="text-2xl relative w-10 h-10 overflow-hidden" onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
                     <div className="p-2 bg-yellow-300 rounded absolute top-2/4 dark:-translate-y-32 -translate-y-2/4 text-slate-700 transition-transform	">
                         <Icon className="" name="sun" />
                     </div>

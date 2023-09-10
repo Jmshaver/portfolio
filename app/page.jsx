@@ -33,7 +33,7 @@ export default async function Home() {
 
 
         {
-          projectsData.slice(0, 3).map((projectData, index) => (<ProjectSection data={projectData} left={index % 2} />))
+          projectsData.slice(0, 3).map((projectData, index) => (<ProjectSection key={projectData.name} data={projectData} left={index % 2} />))
         }
       </section>
       <section className='py-10 bg-gradient-to-t from-slate-300 dark:from-slate-700 to-gray-200 dark:to-gray-800'>
@@ -48,8 +48,8 @@ export default async function Home() {
           />
           <div className='md:w-2/3 lg:w-1/2'>
             <h2 className='text-3xl font-bold mb-2'>A little more about me</h2>
-            <p className='mb-2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum deserunt odit voluptatibus vero recusandae libero a magni nulla id, fugiat deleniti tenetur eveniet ea? Debitis veniam et recusandae eum! Temporibus harum, alias ratione dignissimos nam vero deserunt recusandae amet quidem?</p>
-            <p className='mb-4'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum deserunt odit voluptatibus vero recusandae libero a magni nulla id, fugiat deleniti tenetur eveniet ea? Debitis veniam et recusandae eum! Temporibus harum, alias ratione dignissimos nam vero deserunt recusandae amet quidem?</p>
+            <p className='mb-2'>I am a Senior at the University of Michigan and working part time for Caterpillar. I have worked on projects such as creating websites for clients, sentiment analysis, customer segmentation, product recommendation, voice chat bot for calorie tracking and Reddit storytime TikTok video generator.</p>
+            <p className='mb-4'>I love watching sports especially F1 🏎️ and Hockey 🏒 - Go Oilers. I run analysis on F1 race performances and create visualizations for different driver metrics. I also enjoy snowboarding and am a member of the Michigan Snowboarding Club.</p>
             <Button text="View My Resume 📄" href='/resume' />
           </div>
         </div>

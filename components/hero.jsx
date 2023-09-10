@@ -12,10 +12,7 @@ export default function Hero() {
             </span>
           </h1>
           <p className="mt-2">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Nostrum doloribus, laboriosam voluptatibus velit animi
-            eos, in tempore quaerat quas quidem cum vero nesciunt nam
-            hic.
+            Current University of Michigan student 〽️ studying data science and business. Interested in Natural Language Processing 💬 and Web Design 🖥️.
           </p>
           <div className="flex justify-start gap-5 pt-2 flex-wrap">
             <Link
