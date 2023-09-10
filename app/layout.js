@@ -4,26 +4,16 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from '@/components/navBar'
 const inter = Inter({ subsets: ['latin'] })
-import { useEffect } from 'react';
+import { Providers } from './providers'
 
 export default function RootLayout({ children }) {
-  useEffect(() => {
-    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const isDarkThemeInLocalStorage = localStorage.theme === 'dark';
-
-    if (isDarkThemeInLocalStorage || (!('theme' in localStorage) && prefersDarkMode)) {
-      document.documentElement.classList.add('dark');
-      document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-      document.documentElement.setAttribute('data-theme', 'light');
-    }
-  }, []);
   return (
-    <html data-theme="light" lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className + ' bg-white dark:bg-gray-800 text-black dark:text-white'}>
-        <Navbar />
-        {children}
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
       </body>
     </html>
   )

@@ -28,7 +28,7 @@ export default async function Projects() {
                     All My Projects 👨‍💻
                 </h1>
                 {
-                    projectsData.map((projectData, index) => (<ProjectSection data={projectData} left={index % 2} />))
+                    projectsData.map((projectData, index) => (<ProjectSection key={projectData.name} data={projectData} left={index % 2} />))
                 }
             </section>
 

@@ -6,16 +6,13 @@ export default function Hero() {
       <div className="container mx-auto px-2 py-32 flex items-center content-between flex-col-reverse sm:flex-row gap-4">
         <div className="sm:w-2/3 lg:w-1/2">
           <h1 className="text-5xl font-extrabold self-align-center">
-            👋 I'm{' '}
+            👋 I&apos;m{' '}
             <span className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Jay
             </span>
           </h1>
           <p className="mt-2">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Nostrum doloribus, laboriosam voluptatibus velit animi
-            eos, in tempore quaerat quas quidem cum vero nesciunt nam
-            hic.
+            Current University of Michigan student 〽️ studying data science and business. Interested in Natural Language Processing 💬 and Web Design 🖥️.
           </p>
           <div className="flex justify-start gap-5 pt-2 flex-wrap">
             <Link
