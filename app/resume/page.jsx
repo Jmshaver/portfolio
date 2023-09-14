@@ -18,18 +18,20 @@ export default function Resume() {
     const resume = [
         {
             "company": "Caterpillar",
-            "dates": "05 2023 - 08 2023",
-            "role": "Digital Analytics Intern",
+            "dates": "May 2023 – Present",
+            "role": "Data Scientist Intern, Front End Intern",
             "location": "Chicago, IL",
             "image": "/logos/cat.jpeg",
             "bullets": [
-                "Analyzed the seasonality of best-selling parts by quarter using Python and Pandas to gain insight into customer behavior and create better recommendation on parts.cat.com",
-                "Developed POC about adding a subscribe and save business model to the parts.cat.com using Python and Snowflake to increase customer purchasing frequency"
+                "Devised and executed a proof of concept (POC) leveraging Python, Pandas, AWS, and Snowflake along with clustering techniques (K-Means and Hierarchical Clustering) to produce accurate part recommendations to customers.",
+                "Operated in an Agile environment and created progress presentations communicating to stakeholders.",
+                "Built Angular components and email templates for CAT’s Vision Link app, enhancing user experience & accessibility.",
+                "Constructed a front-end in React and integrated an LLM with an API for a hackathon translation app."
             ]
         },
         {
             "company": "Dewberry - Michigan Data Science Team",
-            "dates": "01 2023 – Present",
+            "dates": "Jan 2023 – Present",
             "role": "Project Lead",
             "location": "Ann Arbor, MI",
             "image": "/logos/dewberry.jpeg",
@@ -41,21 +43,19 @@ export default function Resume() {
         },
         {
             "company": "Michigan Data Science Team",
-            "dates": "08 2021 – Present",
-            "role": "Project Lead, Mentor, Team Member",
+            "dates": "Aug 2021 – Present",
+            "role": "Project Lead, Web Designer, Mentor",
             "location": "Ann Arbor, MI",
             "image": "/logos/mdst.png",
             "bullets": [
-                "Led a group of 15 people to create a Natural Language Processing (NLP) model to determine the sentiment behind different tweets over 10 weeks to improve team member’s AI knowledge.",
-                "Learned about different techniques of visualizing and analyzing data sets through interactive weekly learning sessions.",
-                "Used machine learning (ML) research to develop stock prediction algorithm with 52% accuracy using TensorFlow and a Bi-directional neural network.",
-                "Visualized 100 congressional stock portfolios using Tableau and Pandas to determine whether gains performed statistically above the market average.",
-                "Mentored 2 underclassmen and provided insight on how to succeed in the fast-paced stressful college landscape."
+                "Led 3 projects of 15 members in building NLP sentiment analysis, wildfire spread prediction, and poker bot, enhancing team members' expertise in data analysis, ML, PyTorch, and Python while providing mentorship to underclassmen.",
+                "Redesigned and implemented the club's website using Figma, React, Next.js, Tailwind CSS, and GitHub Actions for a professional and modern look and easy-to-edit interface, resulting in a 147% increase in traffic.",
+                "Collaborated in 4 other projects such as building a stock prediction model with 52% accuracy in TensorFlow as well as visualizing and analyzing 100 congressional stock portfolios for unfair gains with Tableau, Python, and Pandas."
             ]
         },
         {
             "company": "Imbe Solutions (Web Design Company)",
-            "dates": "10 2018 – Present",
+            "dates": "Nov 2018 – Present",
             "role": "Co-founder, Lead Developer",
             "location": "St. Paul, MN",
             "image": "/logos/imbe-solutions.png",
@@ -67,14 +67,14 @@ export default function Resume() {
         },
         {
             "company": "Infinite Degrees",
-            "dates": "09 2022 – 01 2023",
+            "dates": "Oct 2022 – Jan 2023",
             "role": "Full Stack Intern",
             "location": "Ann Arbor, MI",
             "image": "/logos/infinite-degrees.jpeg",
             "bullets": [
-                "Implemented 3 application features using Ionic, React and Tailwind CSS from Figma mockup.",
-                "Interacted with Azure database to populate relevant content to the app and enhance user experience.",
-                "Leveraged Beautiful Soup to web scrape ski and snowboard competition results to rank competitors."
+                "Executed the development of 3 application features, utilizing Ionic, React, and Tailwind CSS off Figma mockups.",
+                "Interacted with an Azure database, hydrating relevant content to the application and elevating user experience.",
+                "Employed Beautiful Soup for web scraping, extracting ski and snowboard competition results to establish rankings."
             ]
         }
     ];
@@ -98,13 +98,13 @@ export default function Resume() {
                         <div className="divider my-0"></div>
                         <Experience data={{
                             "company": "University of Michigan",
-                            "dates": "08 2020 - 05 2024",
-                            "role": "Data Science Major with Business Minor, Bachelor of Science in Engineering - 3.912/4.00 GPA",
+                            "dates": "Aug 2020 - May 2024",
+                            "role": "Data Science Major Bachelor of Science in Engineering, Business Minor - 3.912/4.00 GPA",
                             "location": "Ann Arbor, MI",
                             "image": "/logos/michigan.png",
 
                         }} ><p>
-                                <span className="font-bold">Coursework:</span> Algorithms & Data Structures, Computer Organization, Linear Regression, Data Mining, Basic Probability, Agent Based Modeling, Machine Learning, Mathematics in Finance, Database Management, Web Systems, Conversational AI
+                                <span className="font-bold">Coursework:</span> Algorithms & Data Structures, Computer Organization, Conversational AI, Database Management Systems, Linear Regression, Data Mining, Basic Probability, Agent Based Modeling, Machine Learning, Mathematics in Finance, Web Systems
                             </p></Experience>
                     </div>
                     <div className='py-2'>
@@ -127,12 +127,12 @@ function Experience({ data, children }) {
     return (
         <div className='p-4 border border-slate-700 dark:border-white my-6 rounded-lg' >
 
-            <div className="resume-grid mb-2">
+            <div className="resume-grid mb-3">
                 <Image className="w-[56px] h-[56px] mr-2 object-cover rounded row-span-2" width={56} height={56} src={data?.image} alt={data.company + " logo"} />
                 <h3 className='font-bold'>{data.company}</h3>
                 <span>{data.dates}</span>
                 <span className=''>{data.role}</span>
-                <span className='italic'>{data.location}</span>
+                <span className='italic md:justify-self-end'>{data.location}</span>
             </div>
             {data?.bullets && <ul className='pl-4 list-disc'>
                 {data.bullets.map((bullet, index) => {

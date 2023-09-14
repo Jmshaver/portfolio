@@ -8,7 +8,7 @@
             "CSS",
             "HTML"
         ],
-        "description": "Created a modern and responsive single page website for Claricity Consulting using Bootstrap, JavaScript, CSS and HTML. Also setup company email and website hosting.",
+        "description": "Created a modern and responsive single page website for Claricity Consulting using Bootstrap, JavaScript, CSS and HTML. Also set up company email and website hosting.",
         "mobileImage": "/claricity.consulting_(iPhone 12 Pro).png",
         "desktopImage": "/claricity.consulting.png"
     },
@@ -26,7 +26,7 @@
         "desktopImage": "/mdst.club.png"
     },
     {
-        "name": "In2ition Inc",
+        "name": "In2ition Research, Inc.",
         "link": "https://in2itioninc.com",
         "icons": [
             "Adobe Xd",
@@ -47,7 +47,7 @@
             "React",
             "Tailwind"
         ],
-        "description": "I love playing Pocket Planes on my phone and found current calculators didn't work well on mobile and were not user friendly or accessible. Made improvements such as styling searchable drop down and more accessible layout.",
+        "description": "I love playing Pocket Planes on my phone and found that current calculators didn't work well on mobile devices becuase they were not user friendly or accessible. Made improvements such as styling searchable drop down and more accessible layout.",
         "mobileImage": "/jmshaver.github.io_Pocket-Planes_(iPhone 12 Pro).png",
         "desktopImage": "/jmshaver.github.io_Pocket-Planes.png"
     },
@@ -71,7 +71,7 @@
             "CSS",
             "HTML"
         ],
-        "description": "Created a responsive website only using base HTML, CSS and JavaScript to help advertise new book launch. Also created html email signature to advertise the book. ",
+        "description": "Created a responsive website only using base HTML, CSS and JavaScript to help promote a new book launch. Also created HTML email signature to advertise the book. ",
         "mobileImage": "/headquarterseconomy.com_(iPhone 12 Pro).png",
         "desktopImage": "/headquarterseconomy.com.png"
     }
